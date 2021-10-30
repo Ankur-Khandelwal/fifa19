@@ -1,0 +1,56 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -30px;
+}
+
+.navbar{
+  display: inline;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 150px;
+  color: #9296A6;
+  font-size: 1.01em;
+  font-weight: bold;
+}
+
+.navbar span{
+  margin-right: 10px;
+}
+
+.playerNamePic{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5em;
+  color: rgb(85, 84, 84);
+  transform: translateY(-60%);
+  z-index: -1;
+}
+
+.playerNamePic img{
+  width: 75px;
+  height: 75px;
+}
+
+.navbar a {
+  color: #9296A6;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1080px) {
+  .navbar{
+    margin-left: 20px;
+  }
+
+  .playerNamePic{
+    margin-top: 30px;
+  }
+}

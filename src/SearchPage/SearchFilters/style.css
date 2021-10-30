@@ -1,0 +1,31 @@
+.searchFilters{
+  display: flex;
+  flex-direction:column
+}
+
+.filtersList{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+}
+
+select{
+  border-radius: 20px;
+  padding: 5px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: smaller;
+}
+
+option{
+ width: 20px;
+}
+select:focus{
+  border: 2px solid rgb(255,0,104);
+}
+
+@media screen and (max-width: 600px) {
+  select{
+    font-size:x-small;
+  }
+}

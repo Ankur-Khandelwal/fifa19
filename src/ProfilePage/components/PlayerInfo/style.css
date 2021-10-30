@@ -1,0 +1,42 @@
+.playerInfo{
+  width: 100%;
+  padding: 20px;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 100px;
+}
+
+.overall{
+  display: flex;
+  flex-direction: row;
+}
+
+.greenInfo{
+  text-align: center;
+  width: 120px;
+  padding: 12px 15px;
+  background-color:#1A7E53;
+  border-radius: 13px;
+  color:white;
+}
+
+.data{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.greenInfo span{
+  font-weight: 700;
+}
+
+.data p{
+  margin: 8px;
+  font-size: 13px;
+}
+
+.data span{
+  font-weight: 700;
+  color: #737679;
+  margin-left: 8px;
+}

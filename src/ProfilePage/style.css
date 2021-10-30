@@ -1,0 +1,77 @@
+.profilePage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.verticalLine {
+  height: 450px;
+  width: 1px;
+  background-color: #797373;
+  margin: 20px;
+}
+
+.playerDetails {
+  display: flex;
+  flex-direction: row;
+}
+
+.artImage1, .artImage2, .artImage3, .artImage4 {
+  position: absolute;
+  width: 600px;
+  z-index: -10;
+}
+
+.artImage1 {
+  transform: rotate(160deg);
+  top: -95px;
+  left: -250px;
+}
+
+.artImage2 {
+  transform: rotate(228deg);
+  right: -205px;
+  top: -56px;
+}
+
+.artImage3 {
+  transform: rotate(-12deg);
+  right: -220px;
+  bottom: -114px;
+}
+
+.artImage4 {
+  transform: rotate(45deg);
+  width: 800px;
+  bottom: -150px;
+  left: -279px;
+}
+
+@media screen and (max-width: 925px) {
+  .playerDetails {
+    flex-direction: column-reverse;
+  }
+
+  .verticalLine {
+    display: none;
+  }
+
+  .profilePage{
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .artImage1, .artImage2, .artImage3, .artImage4 {
+    display: none;
+  }
+
+  .profilePage {
+    overflow-x: initial;
+    overflow-y: initial;
+  }
+}
+
